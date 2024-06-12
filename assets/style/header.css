@@ -16,3 +16,45 @@
     font-family: "Neue Machine", sans-serif;
 
 }
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/img/icons/developer_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .3rem;
+}
+
+.information .job::before {
+    background-image: url('/assets/img/icons/developer_icon.svg');
+}
+
+.information .location::before {
+    background-image: url('/assets/img/icons/location_icon.svg');    
+}
+
+.information .phone::before {
+    background-image: url('/assets/img/icons/phone_icon.svg');    
+}
+
+.information .email::before {
+    background-image: url('/assets/img/icons/mail_icon.svg');    
+}
