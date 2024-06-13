@@ -17,9 +17,13 @@
     <link rel="stylesheet" href="/assets/style/global.css">
     <link rel="stylesheet" href="/assets/style/header.css">
     <link rel="stylesheet" href="/assets/style/acordeon.css">
+    <link rel="stylesheet" href="assets/style/languages.css">
+    <link rel="stylesheet" href="/assets/style/portfolio.css">
+    <link rel="stylesheet" href="/assets/style/curriculo.css">
+    <link rel="stylesheet" href="/assets/style/skills.css">
 </head>
 <body>
-    <div class="main">
+    <main class="main">
         <header class="header">
             <img src="/assets/img/icon_port.png" alt="Foto de Rogério Gomes" class="photo">
     
@@ -32,24 +36,105 @@
             <div class="information">
                 <p class="job">Desenvolvedor Junior</p>
                 <p class="location">Caraguatatuba, São Paulo</p>
-                <p class="phone">(12) 99175-7967</p>
-                <p class="email">roger.marcondes19@gmail.com</p>
+                <p class="phone">
+                    <a href="tel:(12) 99175-7967">(12) 99175-7967</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:roger.marcondes19@gmail.com">roger.marcondes19@gmail.com</a>
+                </p>
             </div>   
         </header>
 
         <section class="acordeon">
             <button class="trigger" type="button">
-                    Idiomas
+                    <h2>Habilidades</h2>
+            </button>
+
+                <div class="content">
+                    <div class="skills">
+                        <section class="tools">
+                            <h3>Ferramentas:</h3>
+                            <ul>
+                                <li>
+                                    <img src="" alt="JAVA" title="JAVA">
+                                </li>
+                                <li>
+                                    <img src="" alt="JAVASCRIPT" title="JAVASCRIPT">
+                                </li>
+                                <li>
+                                    <img src="" alt="MySQL" title="MySQL">
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="softSkills">
+                            <h3>Interpessoal:</h3>
+                            <ul>
+                                <li>Comunicação</li>
+                                <li>Aprendizado Rápido</li>
+                                <li>Gestão de Tempo</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                    <h2>Idiomas</h2>
             </button>
 
             <div class="content">
-                    <ul>
+                    <ul class="languages">
                         <li>Português</li>
                         <li>Ingles Básico</li>
                     </ul>
             </div>
         </section>
-    </div>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                    <h2>Portfólio</h2>
+            </button>
+
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <span class="title-p github">Manipulação de Banco de Dados MongoDB com JAVA Springboot</span>
+                        <a href="https://github.com/Rogerioerio/springboot-mongodb" target="_blank">github.com/Rogerioerio/springboot-mongodb</a>
+                    </li>
+                    <li>
+                        <span class="title-p github">Manipulação de Banco de Dados SQL com JAVA Springboot</span>
+                        <a href="https://github.com/Rogerioerio/jdbc-project" target="_blank">github.com/Rogerioerio/jdbc-project</a>
+                    </li>
+                    <li>
+                        <span class="title-p github">Manipulação de API com JAVASCRIPT usando PokeAPI</span>
+                        <a href="https://github.com/Rogerioerio/pokedex-project-DIO" target="_blank">github.com/Rogerioerio/pokedex-project-DIO</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                    <h2>Experiência Profissional</h2>
+            </button>
+
+            <div class="content">
+                    <ul class="curriculo">
+                        <li>
+                            <h3 class="title">Estágiario na Prefeitura de Caraguatatuba</h3>
+                            <p class="periodo">Jun 2023 - Atual</p>
+                            <p>
+                                Aqui pude ter experiência com assistência técnica, ajudando á monitorar os micro do setor de educação, configurando e realizando manutenção.
+                                Além de também experiênciar rede de computadores na pratica, e desenvolver uma comunicação assertiva com meus colegas e superiores.
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+    </main>
 
     <script src="/assets/script/acordeon.js"></script>
 </body>

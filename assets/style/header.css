@@ -41,6 +41,15 @@
     margin-right: .3rem;
 }
 
+.information a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
 .information .job::before {
     background-image: url('/assets/img/icons/developer_icon.svg');
 }
